@@ -1,0 +1,57 @@
+body {
+  background-color: #cceeff; /* ページ全体の背景色を水色に設定します。 */
+  text-align: center; /* ページ内のテキストを中央揃えにします。 */
+}
+
+.title {
+  background-color: white; /* タイトルの背景色を白にします。 */
+  display: inline-block; /* タイトルをインラインブロック要素として表示します。 */
+  padding: 20px 40px; /* タイトルの上下に20px、左右に40pxの余白を追加します。 */
+  font-size: 32px; /* タイトルの文字サイズを32pxにします。 */
+  font-weight: bold; /* タイトルの文字を太字にします。 */
+}
+
+.subtitle {
+  margin-top: 10px; /* タイトルの下に10pxの余白を追加します。 */
+  font-size: 16px; /* サブタイトルの文字サイズを16pxにします。 */
+  color: #333; /* サブタイトルの文字色を濃いグレーにします。 */
+  font-family: sans-serif;
+}
+
+.section-label {
+  margin-top: 40px; /* セクションラベルの上に40pxの余白を追加します。 */
+  font-size: 20px; /* セクションラベルの文字サイズを20pxにします。 */
+  font-weight: bold; /* セクションラベルの文字を太字にします。 */
+  color: #333; /* セクションラベルの文字色を濃いグレーにします。 */
+}
+
+.level-buttons {
+  display: flex; /* ボタンを横並びに配置します。 */
+  justify-content: center; /* ボタンを中央揃えにします。 */
+}
+
+.level-btn {
+  font-size: 16px; /* ボタンの文字サイズを16pxにします。 */
+  background-color: white; /* ボタンの背景色を白にします。 */
+  border-radius: 8px; /* ボタンの角を8px丸くします。 */
+}
+
+.reset-btn {
+  margin-top: 20px; /* リセットボタンの上に20pxの余白を追加します。 */
+  font-size: 16px; /* ボタンの文字サイズを16pxにします。 */
+  background-color: white; /* ボタンの背景色を白にします。 */
+  border-radius: 8px; /* ボタンの角を8px丸くします。 */
+}
+
+.result-box{
+     background-color: white;
+     margin-top: 40px; 
+}
+.history-box {
+  margin: 30px auto; /* 上下に30pxの余白を追加し、左右中央に配置します。 */
+  width: 100%; /* ボックスの幅を親要素いっぱいに広げます。 */
+  height: 120px; /* ボックスの高さを120pxに固定します。 */
+  background-color: white; /* ボックスの背景色を白にします。 */
+  border: 2px solid #333; /* ボックスに濃いグレーの2pxの枠線をつけます。 */
+  border-radius: 8px; /* ボックスの角を8px丸くします。 */
+}
