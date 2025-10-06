@@ -17,7 +17,12 @@ body {
   color: #333; /* サブタイトルの文字色を濃いグレーにします。 */
   font-family: sans-serif;
 }
-
+.description-section {
+  background-color: white; /* 背景色を白にします。 */
+  width: 620px; /* ボックスの幅を親要素いっぱいに広げます。 */
+  height: 80px; /* ボックスの高さを120pxに固定します。 */
+  margin: 30px auto; /* 上下に30pxの余白を追加し、左右中央に配置します。 */
+}
 .section-label {
   margin-top: 40px; /* セクションラベルの上に40pxの余白を追加します。 */
   font-size: 20px; /* セクションラベルの文字サイズを20pxにします。 */
