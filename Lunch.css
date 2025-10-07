@@ -17,14 +17,17 @@ body {
   color: #333; /* サブタイトルの文字色を濃いグレーにします。 */
   font-family: sans-serif;
 }
+
 .description-section {
   background-color: white; /* 背景色を白にします。 */
-  width: 620px; /* ボックスの幅を親要素いっぱいに広げます。 */
-  height: 80px; /* ボックスの高さを120pxに固定します。 */
-  margin: 30px auto; /* 上下に30pxの余白を追加し、左右中央に配置します。 */
+  width: 680px; /* ボックスの幅を親要素いっぱいに広げます。 */
+  height: 90px; /* ボックスの高さを120pxに固定します。 */
+  margin: 20px auto; /* 上下に30pxの余白を追加し、左右中央に配置します。 */
+  font-size: 20px; /* サブタイトルの文字サイズを16pxにします。 */
 }
+
 .section-label {
-  margin-top: 40px; /* セクションラベルの上に40pxの余白を追加します。 */
+  margin-top: 30px; /* セクションラベルの上に40pxの余白を追加します。 */
   font-size: 20px; /* セクションラベルの文字サイズを20pxにします。 */
   font-weight: bold; /* セクションラベルの文字を太字にします。 */
   color: #333; /* セクションラベルの文字色を濃いグレーにします。 */
@@ -36,9 +39,10 @@ body {
 }
 
 .level-btn {
-  font-size: 16px; /* ボタンの文字サイズを16pxにします。 */
+  font-size: 20px; /* ボタンの文字サイズを16pxにします。 */
   background-color: white; /* ボタンの背景色を白にします。 */
   border-radius: 8px; /* ボタンの角を8px丸くします。 */
+  
 }
 
 .reset-btn {
@@ -48,15 +52,14 @@ body {
   border-radius: 8px; /* ボタンの角を8px丸くします。 */
 }
 
-.result-box{
-     background-color: white;
-     margin-top: 40px; 
-}
-.history-box {
-  margin: 30px auto; /* 上下に30pxの余白を追加し、左右中央に配置します。 */
-  width: 100%; /* ボックスの幅を親要素いっぱいに広げます。 */
-  height: 120px; /* ボックスの高さを120pxに固定します。 */
-  background-color: white; /* ボックスの背景色を白にします。 */
-  border: 2px solid #333; /* ボックスに濃いグレーの2pxの枠線をつけます。 */
-  border-radius: 8px; /* ボックスの角を8px丸くします。 */
+.result-box {
+  background-color: white;
+  margin: 40px auto;         /* ボックス自体を中央に配置 */
+  width: 80%;                /* 親要素の80%の幅に設定 */
+  max-width: 400px;          /* 最大幅を制限して広がりすぎないように */
+  padding: 16px;             /* 内側の余白で見やすく */
+  box-sizing: border-box;    /* paddingを含めて幅を計算 */
+  text-align: left;          /* テキストを左寄せに */
+  border: 2px solid #333;    /* 枠線（必要なら） */
+  border-radius: 8px;        /* 角を丸く（必要なら） */
 }
