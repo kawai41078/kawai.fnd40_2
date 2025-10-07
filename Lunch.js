@@ -20,34 +20,35 @@ function getRandomItems(array, count) {
 
 // 結果を表示する関数（選ばれた料理をresult-boxに表示）
 function displayResult(text) {
-  document.querySelector(".result-box").textContent = text;
+  document.querySelector(".result-box").innerHTML = text;
 }
 
 // 「ちょっとお腹すいた」ボタンの処理
-document.querySelectorAll(".level-btn")[0].addEventListener("click", () => {//.level-btn というクラスを持つボタンをすべて取得し、その中の 最初のボタン（インデックス0） に対してクリックイベントを設定
-  const main = getRandomItem(menu["主菜"]); // 主菜から1つ選ぶ
-  const sides = getRandomItems(menu["副菜"], 2); // 副菜から2つ選ぶ
-  const result = `主菜：${main}、副菜：${sides}`; // 表示用テキストを作成
-  displayResult(result); // 結果を表示
+// 「ちょっとお腹すいた」ボタンの処理
+document.querySelectorAll(".level-btn")[0].addEventListener("click", () => {
+  const main = getRandomItem(menu["主菜"]);
+  const sides = getRandomItems(menu["副菜"], 2);
+  const result = `主菜：${main}<br>副菜：${sides.join("、")}`;
+  displayResult(result);
 });
 
 // 「しっかりお腹すいた」ボタンの処理
 document.querySelectorAll(".level-btn")[1].addEventListener("click", () => {
-  const main = getRandomItem(menu["主菜"]); // 主菜から1つ選ぶ
-  const sides = getRandomItems(menu["副菜"], 2); // 副菜から2つ選ぶ
-  const standards = getRandomItems(menu["定番"], 2); // 定番から2つ選ぶ
-  const result = `主菜：${main}、副菜：${sides}、定番：${standards}`; // 表示用テキストを作成
-  displayResult(result); // 結果を表示
+  const main = getRandomItem(menu["主菜"]);
+  const sides = getRandomItems(menu["副菜"], 2);
+  const standards = getRandomItems(menu["定番"], 1);
+  const result = `主菜：${main}<br>副菜：${sides.join("、")}<br>定番：${standards.join("、")}`;
+  displayResult(result);
 });
 
 // 「お腹がすいて倒れそう」ボタンの処理
 document.querySelectorAll(".level-btn")[2].addEventListener("click", () => {
-  const mains = getRandomItems(menu["主菜"], 2); // 主菜から2つ選ぶ
-  const sides = getRandomItems(menu["副菜"], 2); // 副菜から2つ選ぶ
-  const standards = getRandomItems(menu["定番"], 3); // 定番から3つ選ぶ
-  const result = `主菜：${mains}、副菜：${sides}、定番：${standards}`; // 表示用テキストを作成
-  displayResult(result); // 結果を表示
- });
+  const mains = getRandomItems(menu["主菜"], 2);
+  const sides = getRandomItems(menu["副菜"], 2);
+  const standards = getRandomItems(menu["定番"], 2);
+  const result = `主菜：${mains.join("、")}<br>副菜：${sides.join("、")}<br>定番：${standards.join("、")}`;
+  displayResult(result);
+});
 
  // リセットボタンのクリックイベントを設定
 document.querySelector(".reset-btn").addEventListener("click", () => {
